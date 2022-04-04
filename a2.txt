@@ -1,0 +1,34 @@
+import numpy as np
+import pandas as pd
+
+1. S1 = pd.Series([21,23,23,89,58,57,67,88])
+   S1 = pd.Series([21,23,23,89,58,57,67,88], index = [‘k’,’u’,’y,’f’,’I’,’n’,’h’,’c’])
+
+2. s2 = pd.Series([1, 2, 3, 4, 5]) 
+   s3 = pd.Series([6, 7, 8, 9, 10]) 
+   s4 = s3+s2 
+   s5 = s3*s2   
+   s6 = s3/s2
+   s7 = s3-s2 
+   
+3. #Creating Series from numpy array
+   y = np.array(['e','n','g','l','i','s','h']) 
+   s8 = pd.Series(y)
+   
+   #Creating Series from dictionary
+   x = {'a':7,'b':77,'c':777,'d':7777,'e':77777,'f':777777,'g':7777777} 
+   s9 = pd.Series(x)
+   
+4. Errors are per,  pl, textsize, font, plt
+   
+5. The correct code with correction of errors is as follows:
+   import matplotlib.pyplot as p
+   label = ['A', 'B', 'C', 'M', 'P', 'R']
+   tot = [90,80,47,25,50,54]
+   index = np.arange(len(label))
+   p.bar(index, tot)
+   p.xlabel('Category', text=5)
+   p.ylabel('Total', text=5)
+   p.xticks(index, label, fontsize=5,rotation=30)
+   p.title('Percentage of Marks achieve bystudent Class XII')
+   p.show()   
